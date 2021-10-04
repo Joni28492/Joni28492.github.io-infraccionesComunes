@@ -1,5 +1,6 @@
 import React from 'react'
 import { leparInfracciones } from '../data/infracciones';
+import { iconsNavbar } from '../data/routesList';
 import { HorariosActividad } from '../HorariosActividad';
 import { ListadoBasico } from '../ListadoBasico';
 
@@ -28,7 +29,7 @@ export const LeparScreen = () => {
 
             <div  style={{display:'flex', flexDirection: 'column', alignItems:'center'}}>
                 <strong>Infracciones</strong>
-                <i className="fas fa-person-booth" style={{fontSize: 40, color: 'Tan'}}></i>
+                <i className={iconsNavbar[2]} style={{fontSize: 40, color: 'Tan'}}></i>
             </div>
 
             <div className="animate__animated animate__tada ">

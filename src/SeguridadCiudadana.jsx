@@ -1,6 +1,7 @@
 import React from 'react'
 import { CostePrescripcionSegCiudadana } from './CostePrescripcionSegCiudadana';
 import { infracionesSeguridadCiudadana } from './data/infracciones';
+import { iconsNavbar } from './data/routesList';
 import { ListadoBasico } from './ListadoBasico'
 
 export const SeguridadCiudadana = () => {
@@ -18,7 +19,7 @@ export const SeguridadCiudadana = () => {
                 <h1>Seguridad Ciudadana 4/2015</h1>
                <div style={{display:'flex', flexDirection: 'column-reverse'}}>
                 <strong>Infracciones</strong>
-                <i className="fas fa-users" style={{fontSize: 50, color: 'dodgerblue'}}></i>
+                <i className={iconsNavbar[1]} style={{fontSize: 50, color: 'dodgerblue'}}></i>
                </div>
 
             <CostePrescripcionSegCiudadana />
