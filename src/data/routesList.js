@@ -1,4 +1,9 @@
 // añadir aqui las nuevas rutas
+export const componentsRoute = [
+    
+]
+
+
 
 export const routesList = [
     '/infracionesComunes',
@@ -6,6 +11,7 @@ export const routesList = [
     '/lepar',
     '/animalesppp',
     '/retirada',
+    '/alcoholydrogas'
 ]
 
 export const titulosNavbar = [
@@ -14,6 +20,7 @@ export const titulosNavbar = [
     'Lepar',
     'Animales',
     'Retirada',
+    'Alcohol y Drogas'
     
 ]
 
@@ -23,4 +30,5 @@ export const iconsNavbar = [
     'fas fa-person-booth',
     'fas fa-paw',
     'fas fa-truck-pickup',
+    'fas fa-beer'
 ]

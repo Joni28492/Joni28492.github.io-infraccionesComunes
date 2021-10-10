@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
 import { Cabecera } from '../Cabecera';
 import { Navbar } from '../Navbar';
+import { AlcoholDrogasScreen } from '../screens/AlcoholDrogasScreen';
 import { AnimalesPppScreen } from '../screens/AnimalesPppScreen';
 import { InfraccionesComunesScreen } from '../screens/InfraccionesComunesScreen';
 import { LeparScreen } from '../screens/LeparScreen';
@@ -39,6 +40,7 @@ export const MainRoute = () => {
             <Route exact path="/lepar" component={LeparScreen} />
             <Route exact path="/animalesppp" component={AnimalesPppScreen} />
             <Route exact path="/retirada" component={RetiradaScreen} />
+            <Route exact path="/alcoholydrogas" component={AlcoholDrogasScreen} />
             <Redirect to="/infracionesComunes" />
              
          
