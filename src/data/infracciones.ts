@@ -264,9 +264,9 @@ export const infracionesAnimalesPpp = [
 
 
 
-export const infraccionesAlcoholYDrogas = [
+export const infraccionesAlcoholYDrogas = {
 
-    {'Muy_Graves': [
+    'Muy_Graves': [
         'a) La venta o dispensación de bebidas alcoholicas a menores de 18, que genere un daño grave e inmediato para la salud del menor',
         'b) La negativa a facilitar información o prestar colaboración con los servicios de inspección y control',
         'c) La Organización de pruebas de RESISTENCIA alcoholica',
@@ -300,8 +300,6 @@ export const infraccionesAlcoholYDrogas = [
         'h) La oposición a facilitar información o la falta de colaboración con la actuación de control de las administraciones públicas que perturbe o retrase la misma, pero que no impida o dificulte gravemente su realización',
         'i) Incumplimiento de los requerimientos especificos realizados por la autoridad sanitaria',
         'j) Todas aquellas que se cometan por negligencia y no conlleven un prejuicio directo para la salud individual o colectiva',
-    ]},
+    ],
 
-
-
-]
+}
