@@ -1,0 +1,23 @@
+.nav-active {
+  color: grey;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.not-active{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    background-color: yellow;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+

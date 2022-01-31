@@ -1,18 +1,19 @@
 
-import { BrowserRouter } from 'react-router-dom';
+
 import './App.css';
-import { Telefonos } from './components/Telefonos';
-import { MainRoute } from './routes/MainRoute';
+import { Navigation } from './routes/Navigation';
+
+
 
 function App() {
   return (
     <div className="App">
 
-      <h1>Actuaizaciones</h1>
 
 
+      <Navigation />
 
-      <Telefonos />
+
     </div>
   );
 }
