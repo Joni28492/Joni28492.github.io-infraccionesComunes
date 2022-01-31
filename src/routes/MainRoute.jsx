@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import {
-    HashRouter as Router,
-    Switch,
+    BrowserRouter as Router,
     Route,
-    Redirect
+    Navigate,
+    Routes
     
   } from "react-router-dom";
 import { Cabecera } from '../Cabecera';
+import { Telefono } from '../components/Telefono';
+import { telefonosEmergencias } from '../data/telefonosEmergencias';
 import { Navbar } from '../Navbar';
 import { AlcoholDrogasScreen } from '../screens/AlcoholDrogasScreen';
 import { AnimalesPppScreen } from '../screens/AnimalesPppScreen';
@@ -25,26 +27,31 @@ export const MainRoute = () => {
             {/* navbar aqui */}
            
             <Cabecera className="mt-2 pt-2" visible={visible} setVisible={setVisible}/>
+            
+
+
 
             {
-              (visible) && 
+              (visible) ? 
               <div style={{display:'flex', justifyContent: 'center'}}>
                 <Navbar />
               </div>
+              :<Telefono tel={telefonosEmergencias[0].tel} color={telefonosEmergencias[0].color}/>
             }
             
            
-            <Switch>
-            <Route exact path="/infracionesComunes" component={InfraccionesComunesScreen} />
-            <Route exact path="/seguridadCiudadana" component={SeguridadCiudadana} />
-            <Route exact path="/lepar" component={LeparScreen} />
-            <Route exact path="/animalesppp" component={AnimalesPppScreen} />
-            <Route exact path="/retirada" component={RetiradaScreen} />
-            <Route exact path="/alcoholydrogas" component={AlcoholDrogasScreen} />
-            <Redirect to="/infracionesComunes" />
-             
+          <Routes>
+            <Route exact path="/infracionesComunes" element={<InfraccionesComunesScreen />} />
+            <Route exact path="/seguridadCiudadana" element={<SeguridadCiudadana />} />
+            <Route exact path="/lepar" element={<LeparScreen />} />
+            <Route exact path="/animalesppp" element={<AnimalesPppScreen />} />
+            <Route exact path="/retirada" element={<RetiradaScreen />} />
+            <Route exact path="/alcoholydrogas" element={<AlcoholDrogasScreen />} />
+          
+            {/* <Route exact path="/*" component={InfraccionesComunesScreen} /> */}
+            <Route path="/*" element={<Navigate to='/infracionesComunes' replace />} />
          
-          </Switch>
+          </Routes>
 
           
           
