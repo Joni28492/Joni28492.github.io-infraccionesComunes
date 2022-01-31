@@ -3,7 +3,7 @@
 export const telefonosEmergencias = [
     {
         name: 'Policía Local - Valdes',
-        tel: '985472708', 
+        tel: '985470708',
         color: 'red',
         icon: '',
     },
