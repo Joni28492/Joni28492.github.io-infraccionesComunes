@@ -7,8 +7,8 @@ import {
     
   } from "react-router-dom";
 import { Cabecera } from '../Cabecera';
-import { Telefono } from '../components/Telefono';
-import { telefonosEmergencias } from '../data/telefonosEmergencias';
+import { ListadoTelefonos } from '../components/ListadoTelefonos';
+
 import { Navbar } from '../Navbar';
 import { AlcoholDrogasScreen } from '../screens/AlcoholDrogasScreen';
 import { AnimalesPppScreen } from '../screens/AnimalesPppScreen';
@@ -36,7 +36,8 @@ export const MainRoute = () => {
               <div style={{display:'flex', justifyContent: 'center'}}>
                 <Navbar />
               </div>
-              :<Telefono tel={telefonosEmergencias[0].tel} color={telefonosEmergencias[0].color}/>
+              // :<Telefono tel={telefonosEmergencias[0].tel} color={telefonosEmergencias[0].color}/>
+              :<ListadoTelefonos />
             }
             
            

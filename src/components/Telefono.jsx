@@ -1,30 +1,23 @@
 
 //TODO.: Ajusar props de colores
-export const Telefono = ({tel, color='grey'}) => {
-  return <div style={{
-    color: {color}
-  }}>
+export const Telefono = ({tel='112', color='red', name='emergencias'}) => {
+  return <div className="m-2">
       <a href={`tel:+34${tel}`}
       style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems:"center",
-          justifyContent: 'center',
-          textDecoration: 'none',
-          fontSize: '60px',
-          
-          textDecoration: 'none'
+        color: `${color}`,
+        textDecoration: 'none',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems:"center",
+        justifyContent: 'center',
+        fontSize: '60px',
           
       }}> 
-        <i className="fas fa-phone" style={{
-            color: {color}
-        }} /> 
+        <i className="fas fa-phone"  /> 
         <span
-            style={{
-                fontSize: '15px',
-                color: {color}
-            }}
-        >Polcía Local - Valdes</span>
+            style={{fontSize: '15px'}}
+        >{name}</span>
+        
     </a>
   </div>;
 };
