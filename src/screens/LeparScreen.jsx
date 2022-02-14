@@ -1,4 +1,5 @@
 import React from 'react'
+import { HorariosLepar } from '../components/HorariosLepar';
 import { leparInfracciones } from '../data/infracciones';
 import { iconsNavbar } from '../data/routesList';
 import { HorariosActividad } from '../HorariosActividad';
@@ -15,6 +16,7 @@ export const LeparScreen = () => {
     return (
         <div>
             
+            <HorariosLepar />
 
             <div className="text-center">
                 <h1>Lepar</h1>

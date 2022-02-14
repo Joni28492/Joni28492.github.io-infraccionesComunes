@@ -1,7 +1,15 @@
 
 //TODO.: Ajusar props de colores
-export const Telefono = ({tel='112', color='red', name='emergencias'}) => {
-  return <div className="m-2">
+export const Telefono = (
+  {tel='112', color='red', name='emergencias', 
+    styleDiv={width: '180px',height: '115px'},
+    anchorSize='60px', span =true, spanSize='15px'
+  }) => {
+
+      // {width: '180px',
+      // height: '115px',
+      // padding: '15px'}
+  return <div className="m-2" style={styleDiv} >
       <a href={`tel:+34${tel}`}
       style={{
         color: `${color}`,
@@ -10,13 +18,12 @@ export const Telefono = ({tel='112', color='red', name='emergencias'}) => {
         flexDirection: 'column',
         alignItems:"center",
         justifyContent: 'center',
-        fontSize: '60px',
+        fontSize: `${anchorSize}`,
           
       }}> 
         <i className="fas fa-phone"  /> 
-        <span
-            style={{fontSize: '15px'}}
-        >{name}</span>
+
+        {(span) && <span style={{fontSize: `${spanSize}`}}>{name}</span>}
         
     </a>
   </div>;
