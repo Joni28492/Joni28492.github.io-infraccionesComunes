@@ -1,5 +1,7 @@
 import React from 'react'
-import { infracionesAnimalesPpp } from '../data/infracciones'
+import { useState } from 'react';
+import { ListadoAnimalesPeligrosos } from '../components/ListadoAnimalesPeligrosos';
+import {  infracionesAnimalesPpp } from '../data/infracciones'
 import { ListadoBasico } from '../ListadoBasico'
 
 
@@ -9,6 +11,8 @@ export const AnimalesPppScreen = () => {
 
     const [infracciones] = infracionesAnimalesPpp;
     const {Muy_graves, Graves, Leves} = infracciones;
+    const [cardVisible, setCardVisible] = useState(true)
+
 
     return (
         <div className="text-center">
@@ -17,10 +21,17 @@ export const AnimalesPppScreen = () => {
             <br />
             <small>Tenencia protección y derechos de los animales</small>
             <hr style={{marginBottom: '25px'}}/>
+            
 
             <div  className=" animate__animated animate__pulse animate__repeat-2" style={{display:'flex', flexDirection: 'column-reverse'}}>
                 <strong>Infracciones</strong>
-                <i className="fas fa-paw" style={{fontSize: 80, color: 'brown'}}></i>
+                <i className="fas fa-paw" style={{fontSize: 80, color: 'brown'}} 
+                    onClick={()=>setCardVisible(!cardVisible)}
+                />
+                {/* Componentes imagen animales */}
+
+                { (cardVisible) &&  <ListadoAnimalesPeligrosos /> }
+               
             </div>
 
 
@@ -53,6 +64,15 @@ export const AnimalesPppScreen = () => {
 
             </div>
 
+
+           
+
         </div>
     )
 }
+
+
+
+
+
+
