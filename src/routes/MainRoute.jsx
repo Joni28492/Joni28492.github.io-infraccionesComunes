@@ -3,9 +3,8 @@ import {
     BrowserRouter as Router,
     Route,
     Navigate,
-    Routes
-    
-  } from "react-router-dom";
+    Routes,
+} from "react-router-dom";
 import { Cabecera } from '../Cabecera';
 import { ListadoTelefonos } from '../components/ListadoTelefonos';
 import { routerList } from '../data/routesList';

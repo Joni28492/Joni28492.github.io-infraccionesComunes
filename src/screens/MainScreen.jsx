@@ -1,4 +1,5 @@
 import React from 'react'
+import { MainCards } from '../components/MainCards'
 
 export const MainScreen = () => {
   return (
@@ -8,8 +9,7 @@ export const MainScreen = () => {
         alignItems: 'center',
         justifyContent: 'center'
     }}>
-        <h1>Main Screen</h1>
-        <p>Cards</p>
+        <MainCards />
     </div>
   )
 }

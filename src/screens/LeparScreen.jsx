@@ -14,7 +14,7 @@ export const LeparScreen = () => {
     const leves = leparInfracciones[keys[2]];
     // console.log(leves);
 
-    const {icon} = routerList
+
     return (
         <div>
             
@@ -33,7 +33,7 @@ export const LeparScreen = () => {
 
             <div  style={{display:'flex', flexDirection: 'column', alignItems:'center'}}>
                 <strong>Infracciones</strong>
-                <i className={icon} style={{fontSize: 40, color: 'Tan'}}></i>
+                <i className={routerList[2].icon} style={{fontSize: 40, color: routerList[2].color}}></i>
             </div>
 
             <div className="animate__animated animate__tada ">

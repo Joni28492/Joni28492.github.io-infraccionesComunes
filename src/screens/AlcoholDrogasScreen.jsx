@@ -27,7 +27,7 @@ export const AlcoholDrogasScreen = () => {
 
                 <div style={{
                    fontSize: 60,
-                   color: 'Khaki'
+                   color: routerList[5].color
                 }}>
                 
                         <i className={routerList[5].icon}></i>

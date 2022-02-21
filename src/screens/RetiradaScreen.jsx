@@ -14,7 +14,7 @@ export const RetiradaScreen = () => {
                 <br />
                <div style={{
                    fontSize: 45,
-                   color: 'brown'
+                   color: routerList[4].color
                }}>
                     <small>LSV - </small>
                         <i className={routerList[4].icon}></i>

@@ -29,6 +29,7 @@ export const routerList = [
         title:  'Seguridad ciudadana',
         icon:   'fas fa-users',
         Component: SeguridadCiudadana ,
+        color: '#ba953f',
         visible: true,
     },
     {
@@ -37,6 +38,7 @@ export const routerList = [
         title: 'Lepar',  
         icon: 'fas fa-person-booth',   
         Component: LeparScreen ,
+        color: '#438f5a',
         visible: true,
     },
     {
@@ -45,6 +47,7 @@ export const routerList = [
         title:  'Animales', 
         icon: 'fas fa-paw',
         Component: AnimalesPppScreen ,
+        color: 'brown',
         visible: true,
     },
     {
@@ -53,6 +56,7 @@ export const routerList = [
         title: 'Retirada',   
         icon:  'fas fa-truck-pickup', 
         Component: RetiradaScreen  ,
+        color: '#697994',
         visible: true,
     },
     {
@@ -61,6 +65,7 @@ export const routerList = [
         title:     'Alcohol y Drogas',
         icon:     'fas fa-beer',  
         Component: AlcoholDrogasScreen ,
+        color: '#c4c979',
         visible: true,
     },
     {
@@ -69,6 +74,7 @@ export const routerList = [
         title:     'Infracciones comunes',
         icon:     'fas fa-users',  
         Component: InfraccionesComunesScreen ,
+        color: '#8c7b8f',
         visible: true,
     },
  

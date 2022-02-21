@@ -19,7 +19,7 @@ export const SeguridadCiudadana = () => {
                 <h1>Seguridad Ciudadana 4/2015</h1>
                <div style={{display:'flex', flexDirection: 'column-reverse'}}>
                 <strong>Infracciones</strong>
-                <i className={routerList[1].icon} style={{fontSize: 50, color: 'dodgerblue'}}></i>
+                <i className={routerList[1].icon} style={{fontSize: 50, color: routerList[1].color}}></i>
                </div>
 
             <CostePrescripcionSegCiudadana />

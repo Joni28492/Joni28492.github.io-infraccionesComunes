@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { ListadoAnimalesPeligrosos } from '../components/ListadoAnimalesPeligrosos';
 import {  infracionesAnimalesPpp } from '../data/infracciones'
+import { routerList } from '../data/routesList';
 import { ListadoBasico } from '../ListadoBasico'
 
 
@@ -25,7 +26,7 @@ export const AnimalesPppScreen = () => {
 
             <div  className=" animate__animated animate__pulse animate__repeat-2" style={{display:'flex', flexDirection: 'column-reverse'}}>
                 <strong>Infracciones</strong>
-                <i className="fas fa-paw" style={{fontSize: 80, color: 'brown'}} 
+                <i className={routerList[3].icon} style={{fontSize: 80, color: routerList[3].color}} 
                     onClick={()=>setCardVisible(!cardVisible)}
                 />
                 {/* Componentes imagen animales */}

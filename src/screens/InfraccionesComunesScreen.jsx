@@ -13,7 +13,7 @@ export const InfraccionesComunesScreen = () => {
                 <hr />
             <div  style={{display:'flex', flexDirection: 'column'}}>
                 <strong>Infracciones</strong>
-                <i className={routerList[0].icon} style={{fontSize: 40, color: 'DarkSeaGreen'}}></i>
+                <i className={routerList[6].icon} style={{fontSize: 40, color: routerList[6].color}}></i>
             </div>
         </div>
           
