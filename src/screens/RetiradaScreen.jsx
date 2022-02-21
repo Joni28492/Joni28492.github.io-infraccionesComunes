@@ -1,9 +1,11 @@
 import React from 'react'
 import { inmovilizacion, retirada } from '../data/retirada'
-import { iconsNavbar } from '../data/routesList'
+import {  routerList } from '../data/routesList'
 import { ListadoBasico } from '../ListadoBasico'
 
 export const RetiradaScreen = () => {
+
+     
     return (
         <div>
            
@@ -15,7 +17,7 @@ export const RetiradaScreen = () => {
                    color: 'brown'
                }}>
                     <small>LSV - </small>
-                        <i className={iconsNavbar[4]}></i>
+                        <i className={routerList[4].icon}></i>
                </div>
                 
             <div className="animate__animated animate__backInRight ">

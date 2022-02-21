@@ -1,7 +1,7 @@
 import React from 'react'
 import { HorariosLepar } from '../components/HorariosLepar';
 import { leparInfracciones } from '../data/infracciones';
-import { iconsNavbar } from '../data/routesList';
+import { routerList } from '../data/routesList';
 import { HorariosActividad } from '../HorariosActividad';
 import { ListadoBasico } from '../ListadoBasico';
 
@@ -13,6 +13,8 @@ export const LeparScreen = () => {
     const graves = leparInfracciones[keys[1]];
     const leves = leparInfracciones[keys[2]];
     // console.log(leves);
+
+    const {icon} = routerList
     return (
         <div>
             
@@ -31,7 +33,7 @@ export const LeparScreen = () => {
 
             <div  style={{display:'flex', flexDirection: 'column', alignItems:'center'}}>
                 <strong>Infracciones</strong>
-                <i className={iconsNavbar[2]} style={{fontSize: 40, color: 'Tan'}}></i>
+                <i className={icon} style={{fontSize: 40, color: 'Tan'}}></i>
             </div>
 
             <div className="animate__animated animate__tada ">

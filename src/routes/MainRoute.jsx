@@ -8,14 +8,9 @@ import {
   } from "react-router-dom";
 import { Cabecera } from '../Cabecera';
 import { ListadoTelefonos } from '../components/ListadoTelefonos';
-
+import { routerList } from '../data/routesList';
 import { Navbar } from '../Navbar';
-import { AlcoholDrogasScreen } from '../screens/AlcoholDrogasScreen';
-import { AnimalesPppScreen } from '../screens/AnimalesPppScreen';
-import { InfraccionesComunesScreen } from '../screens/InfraccionesComunesScreen';
-import { LeparScreen } from '../screens/LeparScreen';
-import { RetiradaScreen } from '../screens/RetiradaScreen';
-import { SeguridadCiudadana } from '../SeguridadCiudadana';
+
 
 export const MainRoute = () => {
 
@@ -28,13 +23,10 @@ export const MainRoute = () => {
            
             <Cabecera className="mt-2 pt-2" visible={visible} setVisible={setVisible}/>
             
-
-
-
             {
               (visible) ? 
               <div style={{display:'flex', justifyContent: 'center'}}>
-                <Navbar />
+                <Navbar  setVisible={()=>{setVisible(false)}}/>
               </div>
               // :<Telefono tel={telefonosEmergencias[0].tel} color={telefonosEmergencias[0].color}/>
               :<ListadoTelefonos />
@@ -42,16 +34,10 @@ export const MainRoute = () => {
             
            
           <Routes>
-            <Route exact path="/infracionesComunes" element={<InfraccionesComunesScreen />} />
-            <Route exact path="/seguridadCiudadana" element={<SeguridadCiudadana />} />
-            <Route exact path="/lepar" element={<LeparScreen />} />
-            <Route exact path="/animalesppp" element={<AnimalesPppScreen />} />
-            <Route exact path="/retirada" element={<RetiradaScreen />} />
-            <Route exact path="/alcoholydrogas" element={<AlcoholDrogasScreen />} />
-          
-            {/* <Route exact path="/*" component={InfraccionesComunesScreen} /> */}
-            <Route path="/*" element={<Navigate to='/infracionesComunes' replace />} />
-         
+            {routerList.map( ({ to, title, Component}) =>{
+                return  <Route key={title}  exact path={to} element={<Component />} />
+            })}
+            <Route path="/*" element={<Navigate to='/home' replace />} />
           </Routes>
 
           

@@ -1,13 +1,13 @@
 import React from 'react'
 import { infraccionesAlcoholYDrogas } from '../data/infracciones'
-import { iconsNavbar } from '../data/routesList';
+import { routerList } from '../data/routesList';
 import { ListadoBasico } from '../ListadoBasico';
 
 export const AlcoholDrogasScreen = () => {
 
     const [infracciones] = infraccionesAlcoholYDrogas;
     const {Muy_Graves, Graves, Leves } = infracciones;
-    //    console.log(infracciones);
+   
     return (
         <div>
             
@@ -30,7 +30,7 @@ export const AlcoholDrogasScreen = () => {
                    color: 'Khaki'
                 }}>
                 
-                        <i className={iconsNavbar[5]}></i>
+                        <i className={routerList[5].icon}></i>
                </div>
 
                <div style={{
