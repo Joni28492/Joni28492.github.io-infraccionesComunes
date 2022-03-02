@@ -26,7 +26,7 @@ export const routerList = [
     {
         path:  'seguridadCiudadana',
         to:  '/seguridadCiudadana',
-        title:  'Seguridad ciudadana',
+        title:  'Seg. ciudadana',
         icon:   'fas fa-users',
         Component: SeguridadCiudadana ,
         color: '#ba953f',
@@ -62,7 +62,7 @@ export const routerList = [
     {
         path:     'alcoholydrogas',   
         to:     '/alcoholydrogas',   
-        title:     'Alcohol y Drogas',
+        title:     'Alcohol',
         icon:     'fas fa-beer',  
         Component: AlcoholDrogasScreen ,
         color: '#c4c979',
@@ -71,7 +71,7 @@ export const routerList = [
     {
         path:     'infracionesComunes',   
         to:     '/infracionesComunes',   
-        title:     'Infracciones comunes',
+        title:     'Inf. Comunes',
         icon:     'fas fa-users',  
         Component: InfraccionesComunesScreen ,
         color: '#8c7b8f',
