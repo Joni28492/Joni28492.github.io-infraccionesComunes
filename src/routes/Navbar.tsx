@@ -1,24 +1,32 @@
 
+import { Box, AppBar } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import { routerList } from '../data/routesList';
 
 import './navbar.css'
 
 export const Navbar = () => {
-    return <nav>
-        <ul>
-            {
-                routerList.map(({ to, title }) => {
-                    return <li style={{
-                        listStyle: 'none',
+    return (<Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
 
-                    }} key={to}>
-                        <NavLink
-                            className={({ isActive }) => isActive ? 'nav-active' : 'not-active'}
-                            to={to}>{title}</NavLink>
-                    </li>
-                })
-            }
-        </ul>
-    </nav>;
+        </AppBar>
+    </Box>);
 };
+
+
+
+{/* <ul>
+{
+    routerList.map(({ to, title }) => {
+        return <li style={{
+            listStyle: 'none',
+
+        }} key={to}>
+            <NavLink
+                className={({ isActive }) => isActive ? 'nav-active' : 'not-active'}
+                to={to}>{title}
+            </NavLink>
+        </li>
+    })
+}
+</ul> */}

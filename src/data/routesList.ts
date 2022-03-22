@@ -1,6 +1,11 @@
+
 import { Animales, Lepar, SeguridadCiudadana, Retirada,
     AlcoholDrogas, 
-    Home} from "../pages";
+    Home, LeySeguridadVial} from "../pages";
+
+
+    
+
 
 
 interface RouterInterface {
@@ -8,8 +13,8 @@ interface RouterInterface {
     path: string,
     to: string,
     title: string,
-    icon: string,
-    Component: () => JSX.Element,
+    icon?: string,
+    Component: () => JSX.Element 
     
 }
 
@@ -56,6 +61,13 @@ export const routerList:RouterInterface [] = [
         title:     'Alcohol y Drogas',
         icon:     'fas fa-beer',  
         Component: AlcoholDrogas,
+    },
+    {
+        path:     'leyseguridadvial',   
+        to:     '/leyseguridadvial',   
+        title:     'Ley Seguridad Vial',
+        icon:     'fa-solid fa-cars',  
+        Component: LeySeguridadVial
     },
  
  

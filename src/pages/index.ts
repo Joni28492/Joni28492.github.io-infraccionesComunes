@@ -4,6 +4,7 @@ import { Lepar } from "./Lepar";
 import { Retirada } from "./Retirada";
 import { SeguridadCiudadana } from "./SeguridadCiudadana";
 import { Home } from './Home';
+import { LeySeguridadVial } from './LeySeguridadVial';
 
 
 export {
@@ -12,5 +13,6 @@ export {
     AlcoholDrogas,
     Lepar,
     Retirada,
-    SeguridadCiudadana
+    SeguridadCiudadana,
+    LeySeguridadVial
 }

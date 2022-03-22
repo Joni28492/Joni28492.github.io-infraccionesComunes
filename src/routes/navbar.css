@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .nav-active {
   color: grey;
   transition: all 0.3s ease-out;
