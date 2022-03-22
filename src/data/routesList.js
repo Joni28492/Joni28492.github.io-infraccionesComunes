@@ -5,6 +5,7 @@ import { AlcoholDrogasScreen } from "../screens/AlcoholDrogasScreen";
 import { AnimalesPppScreen } from "../screens/AnimalesPppScreen";
 import { InfraccionesComunesScreen } from "../screens/InfraccionesComunesScreen";
 import { LeparScreen } from "../screens/LeparScreen";
+import { LsvScreen } from "../screens/LsvScreen";
 import { MainScreen } from "../screens/MainScreen";
 import { RetiradaScreen } from "../screens/RetiradaScreen";
 import { SeguridadCiudadana } from "../SeguridadCiudadana";
@@ -75,6 +76,15 @@ export const routerList = [
         icon:     'fas fa-users',  
         Component: InfraccionesComunesScreen ,
         color: '#8c7b8f',
+        visible: false,
+    },
+    {
+        path:     'leySeguridadVial',   
+        to:     '/leySeguridadVial',   
+        title:     'Seguridad Vial - LSV',
+        icon:     'fa-solid fa-car-rear',  
+        Component: LsvScreen ,
+        color: '#53425b',
         visible: true,
     },
  
