@@ -3,7 +3,7 @@ import { CardLink } from './CardLink'
 import { routerList } from '../data/routesList'
 import { useState } from 'react'
 
-export const MainCards = () => {
+export const MainCards = ({displayLayouts=true}) => {
   
     if(localStorage.getItem('appValdesLayuot') ===null ){
         localStorage.setItem('appValdesLayuot', 'card');
@@ -34,7 +34,7 @@ export const MainCards = () => {
        
         
         <>
-
+        {displayLayouts &&
             <div style={{
                 display: 'flex',
                 flexDirection: 'row',
@@ -62,7 +62,7 @@ export const MainCards = () => {
                     }`,           
                 }} className="fa-brands fa-buromobelexperte" onClick={()=>handleLayout('grid')}></i>
                 
-            </div>
+            </div>}
 
             <div
             className='animate__animated animate__fadeIn animate__slow'
@@ -90,11 +90,6 @@ export const MainCards = () => {
                     })
                 }
             </div>
-
-
-          
-            
-            
         </>
 
 

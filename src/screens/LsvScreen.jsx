@@ -23,7 +23,7 @@ export const LsvScreen = () => {
             <i className="fa-solid fa-car-rear text-center" 
                     style={{fontSize: 80, color}} 
                 />
-                <h1 style={{color}}>LsvScreen</h1>
+                <h1 style={{color}}>Ley de seguridad vial</h1>
            </div>
            
            {/* <button className='btn btn-outline-primary m-2'

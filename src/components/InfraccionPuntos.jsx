@@ -19,7 +19,7 @@ export const InfraccionPuntos = ({desc, anotaciones, tipo, letra, cuantia, punto
 
         <strong style={{ fontSize: 30, marginLeft: 15 }}>{tipo}</strong>
         <hr />
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', fontSize: 22, margin:10}}>
                 <span>{letra}) </span>  <p> {desc} </p>
             </div>

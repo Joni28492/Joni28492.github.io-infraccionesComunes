@@ -36,7 +36,7 @@ export const anexoIIinfracciones = [
         // anotaciones: '',
         tipo: 'Muy Grave',
         letra: 'E,F,G',
-        cuantia: 1000,
+        cuantia: 500,
         puntos: 6,
     },
     {
